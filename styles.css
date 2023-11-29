@@ -28,7 +28,7 @@ body {
 
   .botao-bilhetes {
     width: 217.22px;
-    height: 100%;
+    height: 63px;
     background-color: #7BCA2C;
     color: white;
     border: none;
@@ -37,6 +37,7 @@ body {
     font-family: 'USSF 90 Minutes Display', sans-serif;
     font-weight: bold;
     font-size: 16px;
+    position: fixed;
   }
 
   .first-content{
