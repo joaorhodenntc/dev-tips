@@ -372,7 +372,7 @@ body {
   width: 402px;
   height: 150px;
   line-height: 30px;
-  border-radius: 35px 35px 0px 0px;
+  border-radius: 30px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.8);
 }
 
@@ -388,7 +388,7 @@ body {
   width: 402px;
   height: 150px;
   line-height: 30px;
-  border-radius: 35px 35px 0px 0px;
+  border-radius: 30px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.8);
 }
 
