@@ -35,7 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var modalAcessoNegado = document.getElementById('modal-acesso-negado');
 
     if (isOver18) {
-      overlay.style.display = 'none';
+      overlay.classList.add('fadeOut');
+      setTimeout(function () {
+        overlay.style.display = 'none';
+        overlay.classList.remove('fadeOut');
+      }, 1000);
     } else {
       modalAcesso.style.display = 'none';
       modalAcessoNegado.style.display = 'block';
