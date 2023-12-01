@@ -2,15 +2,26 @@
 <html>
 <head>
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-    <script src="/script/app.js"></script>
+    <script src="/script/app.js" defer></script>
 </head>
 <body>
+    <div class="overlay" id="overlay">
+        <div id="modal-acesso">
+          <p>Você deve ter mais de 18 anos para visualizar a página. Por favor, verifique sua idade para entrar.</p>
+          <button class="button-yes" onclick="confirmAge(true)">SIM, TENHO MAIS DE 18 ANOS</button>
+          <button class="button-no" onclick="confirmAge(false)">NÃO</button>
+        </div>
+        <div id="modal-acesso-negado">
+            <p>ACESSO NEGADO</p>
+          </div>
+      </div>
+
     <div class="header">
         <div class="logo">DÚVIDAS</div>
         <div class="menu">SOBRE NÓS</div>

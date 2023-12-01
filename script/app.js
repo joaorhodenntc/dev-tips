@@ -27,3 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
   // Atualiza o contador imediatamente ao carregar a página
   atualizarContador();
 });
+
+  function confirmAge(isOver18) {
+
+    var overlay = document.getElementById('overlay')
+    var modalAcesso = document.getElementById('modal-acesso');
+    var modalAcessoNegado = document.getElementById('modal-acesso-negado');
+
+    if (isOver18) {
+      overlay.style.display = 'none';
+    } else {
+      modalAcesso.style.display = 'none';
+      modalAcessoNegado.style.display = 'block';
+    }
+  }
+
