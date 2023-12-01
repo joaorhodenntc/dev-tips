@@ -275,6 +275,15 @@ body {
   background-color: #7BCA2C;
   border-radius: 10px;
   font-weight: 200;
+  padding: 7px;
+}
+
+.match-info .match-info-loss{
+  color: white;
+  background-color: #FF2E2E;
+  border-radius: 10px;
+  font-weight: 200;
+  padding: 7px;
 }
 
 .match-info td:nth-child(3) {
