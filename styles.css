@@ -237,21 +237,26 @@ body {
   box-shadow: 0px 7px 11px 0px #6C6C6C;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
+  font-family: 'Lexend', sans-serif;
+  padding: 10px;
 }
 
 .main-info {
   width: 100%;
-  height: 50%;
+  height: 70%;
   margin-top: 20px;
-  padding: 0px 10px 0px 10px;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.match-info td {
+  font-weight: 500;
 }
 
 .tips-info th,
 .match-info td {
   padding: 5px;
-  color: #252C58;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
 }
 
 .tips-info th,
@@ -261,12 +266,15 @@ body {
 
 .tips-info th {
   padding-bottom: 25px;
+  font-weight: 400;
+  border-bottom: 2px solid #D5D9DD;
 }
 
 .match-info .match-info-green{
   color: white;
   background-color: #7BCA2C;
   border-radius: 10px;
+  font-weight: 200;
 }
 
 .match-info td:nth-child(3) {
@@ -282,24 +290,40 @@ body {
 }
 
 .nine-content-cabecalho .title{
-  font-family: 'Inter', sans-serif;
   font-size: 20px;
   color: #252C58;
-  padding: 30px 0px 15px 15px;
+  padding: 30px 0px 15px 35px;
+  font-weight: 300;
+  border-bottom: 1px solid #D5D9DD;
 }
 
-.nine-content-linha-abaixo {
-  position: absolute;
-  width: 1106px;
-  height: 1px; 
-  background-color: #D5D9DD;
-  margin-top: -4px;
+.tips-info th:first-child {
+  padding-left: 30px; /* Ou o valor que preferir */
 }
 
-.tips-info-linha-abaixo {
-  position: absolute;
-  width: 1106px;
-  height: 2px; 
+.match-info td:nth-child(1) {
+  padding-left: 30px;
+}
+
+.test-content{
+  padding: 15px;;
+}
+
+.match-info-linha-abaixo{
   background-color: #D5D9DD;
-  margin-top: 50px;
+  height: 1px;
+  opacity: 0.6;
+}
+
+.match-info-data, .match-info-market, .tips-info{
+  color: #252C58;
+  opacity: 0.5;
+}
+
+.match-info-game, .match-info-result {
+  color: #252C58;
+}
+
+.match-info-odd{
+  color: #7BCA2C;
 }
