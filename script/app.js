@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Função para atualizar o contador
   function atualizarContador() {
     // Data de término do contador (pode ser ajustada conforme necessário)
-    const dataTermino = new Date('2023-11-29T19:59:59');
+    const dataTermino = new Date('2023-11-31T08:59:59');
 
     // Data atual
     const agora = new Date();
