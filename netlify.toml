@@ -1,4 +1,0 @@
-[build]
-base = "pasta-base-do-seu-projeto"  # Substitua pela pasta base do seu projeto
-publish = "pasta-base-do-seu-projeto/home"  # Substitua pela pasta onde está o seu index.html
-command = "comando-de-build"  # Substitua pelo comando que compila o seu projeto
