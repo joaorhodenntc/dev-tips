@@ -27,7 +27,8 @@
     <div class="header">
         <div class="duvidas">DÚVIDAS</div>
         <div class="sobre">SOBRE NÓS</div>
-        <div class="aproveitamento">97% DE APROVEITAMENTO</div>
+        <div class="aproveitamento"><a id="linkHistorico">HISTÓRICO</a>
+</div>
         <div class="cadastro">CADASTRO</div>
         <div class="contato">CONTATO</div>
         <div class="line"><img src="/assets/line4.png" alt="" srcset=""></div>
@@ -43,17 +44,17 @@
         <p class="disponivel">DISPONÍVEL EM</p>
         <div class="contagem">
             <div class="horas">
-                <p>HOURS</p>
+                <p>HORAS</p>
                 <p class="num">12</p>
             </div>
             <div class="contagem-linha"></div>
             <div class="minutos">
-                <p>MINUTES</p>
+                <p>MINUTOS</p>
                 <p class="num">53</p>
             </div>
             <div class="contagem-linha"></div>
             <div class="segundos">
-                <p>SECONDS</p>
+                <p>SEGUNDOS</p>
                 <p class="num">4</p>
             </div>
         </div>
@@ -78,7 +79,7 @@
         <div class="linha-abaixo"></div>
     </div>
 
-    <div class="eigth-content">
+    <div class="eigth-content" id="historico">
         <div class="nine-content">
             <div class="nine-content-cabecalho">
                 <p class="title">Histórico</p>
@@ -208,6 +209,21 @@
             
         </div>
     </div>
-    
+
+<script>
+    document.getElementById('linkHistorico').addEventListener('click', function() {
+        smoothScrollTo('historico');
+    });
+
+    function smoothScrollTo(targetId) {
+        var targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+    </script>
 </body>
 </html>
