@@ -46,18 +46,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-document.getElementById('linkHistorico').addEventListener('click', function() {
-    smoothScrollTo('historico');
+  document.getElementById('linkHistorico').addEventListener('click', function() {
+    smoothScrollTo('historico'); 
 });
 
-  function smoothScrollTo(targetId) {
+function smoothScrollTo(targetId) {
     var targetElement = document.getElementById(targetId);
-    if (targetElement) {
+
         window.scrollTo({
-            top: targetElement.offsetTop,
+            top: targetElement.offsetTop - 80,
             behavior: 'smooth'
         });
-    }
+    
 }
 
 
