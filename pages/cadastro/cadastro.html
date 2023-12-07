@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9fe3540a2a.js" crossorigin="anonymous"></script>
-    <script src="/script/app.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -26,22 +26,50 @@
     </div>
 
     <div class="first-content">
-        <div class="second-content">
+
+        <div class="entrar-content" id="entrar-content">
             <div class="options">
-                <h1  class="inscrever-se">Inscrever-se</h1>
+                <h1 class="inscrever-se" onclick="toggleContent('inscrever-content','entrar-content')">Inscrever-se</h1>
                 <h1 class="entrar">Entrar</h1>
             </div>
-            <div class="infos">
+            <div class="infos-entrar">
                 <p>Por favor, indique o seu endereço de email</p>
                 <input type="text" name="" id="" placeholder="Endereço de email">
                 <p>Senha</p>
-                <input type="text" name="" id="" placeholder="Senha">
+                <input type="password" name="" id="" placeholder="Senha">
                 <p class="esqueceu-senha">Esqueceu sua senha?</p>
             </div>
-            <button class="button-entrar">Entrar</button>
+            <button class="button">Entrar</button>
+        </div>
+
+        <div class="inscrever-content" id="inscrever-content">
+            <div class="options">
+                <h1 class="inscrever-se">Inscrever-se</h1>
+                <h1 class="entrar" onclick="toggleContent('entrar-content', 'inscrever-content')">Entrar</h1>
+            </div>
+            <div class="infos-inscrever" id="infos-inscrever">
+                <p>Por favor, indique o seu endereço de email</p>
+                <input type="text" name="" id="email" placeholder="Endereço de email">
+                <p>Criar uma senha:</p>
+                <input type="password" name="" id="senha" placeholder="Senha">
+                <p>Confirme a senha:</p>
+                <input type="password" name="" id="confirmarSenha" placeholder="Senha">
+                <br><br>
+                <p class="aviso" id="aviso"></p>
+                <button class="button" onclick="verificarPreenchimento() ">Inscrever-se</button>
+            </div>
+            <div class="infos-sucesso" id="infos-sucesso">
+                <img src="assets/sucesso.png" alt="" srcset="">
+                <h1 class="sucesso">Sucesso</h1>
+                <p class="verificar-email">Por favor, verifique seu email para confirmar sua conta.</p>
+                <p class="reenviar-email">Não recebeu o email? <span class="reenviar">Reenviar</span></p>
+                <form action="/index.html">
+                    <button class="button" type="submit">Início</button>
+                  </form>
+            </div>
+            
         </div>
     </div>
 
-    
 </body>
 </html>
