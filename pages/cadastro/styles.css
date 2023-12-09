@@ -252,3 +252,20 @@ body {
   color: #888; 
   display: block;
 }
+
+.sidebar-link.active {
+  color: #7BCA2C;
+  position: relative; 
+}
+
+.sidebar-link.active::after {
+  content: ''; 
+  display: block;
+  width: 3px; 
+  height: 20px; 
+  background-color: #7BCA2C; 
+  position: absolute; 
+  top: 50%;
+  left: 0; 
+  transform: translateY(-50%);
+}
