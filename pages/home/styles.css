@@ -10,13 +10,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1C1C1C;
-    background-image: url(/assets/fundo.png);
-    background-size: cover;
+    background-image: url(/assets/fundo3.jpg);
+    background-size: contain;
     min-height: 100%;
 }
-
-
 
 .header {
     display: flex;
