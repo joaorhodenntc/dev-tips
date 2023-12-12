@@ -10,9 +10,13 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, rgba(253,253,253,1) 0%, rgba(255,255,255,1) 47%, rgba(254,254,254,1) 54%, rgba(221,219,219,1) 100%);
+    background-color: #1C1C1C;
+    background-image: url(/assets/fundo.png);
+    background-size: cover;
     min-height: 100%;
 }
+
+
 
 .header {
     display: flex;
@@ -23,7 +27,7 @@ body {
 }
 
 .header a{
-  color: var(--corHeader);
+  color: white;
   text-decoration: none;
   font-size: 13px;
   font-family: 'Inter', sans-serif;
@@ -88,7 +92,7 @@ body {
   }
 
   .first-content .disponivel{
-    color: var(--pretoContagem);
+    color: white;
     font-family: 'USSF 90 Minutes Display', sans-serif;
     font-size: 14;
     display: flex;
@@ -121,7 +125,7 @@ body {
   }
 
   .contagem p{
-    color: var(--pretoContagem);
+    color: white;
     font-family: 'USSF 90 Minutes Display', sans-serif;
     font-size: 25px;
     margin: 15px;
