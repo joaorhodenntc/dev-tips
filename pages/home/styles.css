@@ -139,7 +139,7 @@ body {
   .contagem-linha{
     height: 60px;
     width: 1.5px;
-    background-color: var(--pretoContagem);
+    background-color: white;
   }
 
   .second-content{
